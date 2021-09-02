@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.files = [".coveralls.yml".freeze, ".gitignore".freeze, ".rspec".freeze, "Gemfile".freeze, "LICENSE.txt".freeze, "README.md".freeze, "Rakefile".freeze, "bin/zoho_service".freeze, "lib/zoho_service.rb".freeze, "lib/zoho_service/Hash.rb".freeze, "lib/zoho_service/base.rb".freeze, "lib/zoho_service/api_connector.rb".freeze, "lib/zoho_service/api_collection.rb".freeze, "lib/zoho_service/version.rb".freeze, "spec/spec_helper.rb".freeze, "spec/zoho_service_spec.rb".freeze, "zoho_service.gemspec".freeze]
   s.homepage = "".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.5.2".freeze
+  s.rubygems_version = "2.7.4".freeze
   s.summary = "Zoho Service Desk gem".freeze
   s.test_files = ["spec/spec_helper.rb".freeze, "spec/zoho_service_spec.rb".freeze]
 
@@ -51,4 +51,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>.freeze, ["~> 0.7.1"])
     s.add_dependency(%q<coveralls>.freeze, ["~> 0.7.0"])
   end
+
+  s.add_dependency(%q<oauth2>.freeze, ["~> 1.4.7"])
 end
